@@ -1,0 +1,313 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F0ECE1;
+  font-family: Montserrat ;
+
+}
+
+
+
+#wrapper {
+  width: 960px;
+  margin: 0  auto;
+
+
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-button {
+  width: 0;
+  height: 0;
+}
+::-webkit-scrollbar-thumb {
+  background: #a5424f;
+  border: 0 none #ffffff;
+  border-radius: 0;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f0ece1;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #becad6;
+}
+::-webkit-scrollbar-track {
+  background: #30323d;
+  border: 0 none #ffffff;
+  border-radius: 0;
+}
+::-webkit-scrollbar-track:hover {
+  background: #394651;
+}
+::-webkit-scrollbar-track:active {
+  background: #31323d;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* sidebar */
+
+#header {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  box-sizing: border-box;
+  width: 960px;
+  height: 100vh;
+  transform: translateX(-50%);
+  z-index: 9999;
+
+
+}
+
+.sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #30323D;
+  height: 100vh;
+  width: 340px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+    border: 10px dotted  #A5424F;
+    overflow-y: scroll;
+    box-shadow: 20px 0  #A5424F;
+
+}
+
+
+
+.logo {
+display: block;
+margin: 0 auto;
+  width: 252px;
+  height: 164px;
+  background: url("image/Logo.png");
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 18pt;
+  color:#F0ECE1;
+  font-weight: 400;
+
+  text-shadow: 2px 0 #A5424F;
+}
+
+h3 {
+  text-align: center;
+margin: 0;
+  font-family: "Stint Ultra Condensed";
+  font-size: 40pt;
+  color:  #A5424F;
+  text-transform:uppercase;
+  line-height: 32pt;
+    text-shadow: 4px 0 #F0ECE1;
+
+}
+
+.hours {
+  order: 1;
+  width: 140px;
+}
+
+#hourstitle {
+  text-align: center;
+  font-family: "Stint Ultra Condensed";
+  text-transform: uppercase;
+  margin: 0;
+font-size:  35pt;
+color:#F0ECE1;
+}
+
+#hourscontent {
+  width: 140px;
+  text-align: justify;
+  text-align-last: justify;
+margin: 0;
+color: #A5424F;
+text-transform: lowercase;
+}
+
+
+
+.logowrapper {
+  order: 2;
+}
+
+.intro {
+  order : 3;
+  width: 180px;
+  color: #637381;
+  text-align: center;
+  font-weight: 300;
+  font-size: 12pt;
+
+}
+
+/* main content */
+
+#appetizers {
+  float: right;
+  width: 500px;
+  clear: both;
+  background-color: #F0ECE1
+}
+
+#main {
+  clear: both;
+  width: 500px;
+  float: right;
+}
+
+#footer {
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  box-sizing: border-box;
+  width: 960px;
+  height: 100vh;
+  transform: translateX(-50%);
+
+}
+
+h2 {
+  color: #F0ECE1;
+  background-color: #BECAD6;
+  text-transform: uppercase;
+ font-family: "Stint Ultra Condensed";
+  margin: 0;
+  font-size: 40pt;
+  padding: 5pt;
+  position:sticky;
+  top:0 ;
+  box-shadow:30px 0 #A5424F;
+  letter-spacing: 10px;
+  text-shadow: 5px 0 #A5424F;
+
+}
+
+.subtitle {
+  text-align: right;
+  color:#BECAD6;
+  font-size: 11pt;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.warning {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color:#F0ECE1;
+  width: 500px;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  border-top: 1px solid #30323D;
+  text-align: right;
+  font-size: 8pt;
+  box-shadow: 32px 0 #F0ECE1;
+}
+
+dt {
+  float: left;
+  padding: 0 .2em 0 0;
+    margin: 0;
+      color: #637381;
+      font-family: "Stint Ultra Condensed";
+      font-size: 20pt;
+}
+
+dd {
+  margin-left: 0;
+  margin-bottom: 20px;
+  clear: both;
+  color: #637381;
+  font-size: 10pt;
+  width: 300px;
+}
+
+.price {
+  float: right;
+  padding: 0 0 0 .2em ;
+    margin: 0;
+}
+
+.dotlead {
+  overflow: hidden;
+}
+
+.dotlead:after {
+    content: "";
+    display: block;
+    overflow: hidden;
+    height: 1em;
+    border-bottom: 1px solid #A5424F;
+}
+
+.img {
+  display: block;
+  height: 200px;
+
+  margin-bottom: 5px;
+  box-shadow:  30px 0 #30323D;
+  box-sizing: border-box;
+  border-top: 3px solid #30323D;
+  border-bottom: 3px solid #30323D;
+  border-left: 3px solid #30323D;
+    border-right: 5px solid  #A5424F;
+}
+
+.appimg1 {
+  background-image: url("image/Rillettes.jpg");
+  background-size: 100%;
+  background-position: center;
+}
+
+.appimg2 {
+  background-image: url("image/tartine.jpg");
+  background-size: 100%;
+  background-position: center;
+}
+
+.appimg3 {
+  background-image: url("image/calamari.jpg");
+  background-size: 100%;
+  background-position: center;
+}
+
+.appimg4 {
+  background-image: url("image/salmon.jpg");
+  background-size: 100%;
+  background-position: center;
+}
+
+.mainimg1 {
+  background-image: url("image/risotto.jpg");
+  background-size: 100%;
+  background-position: center;
+}
+
+.mainimg2 {
+  background-image: url("image/salad.jpg");
+  background-size: 100%;
+  background-position: center;
+}
+
+.mainimg3 {
+  background-image: url("image/crepe.jpg");
+  background-size: 100%;
+  background-position: center;
+}
